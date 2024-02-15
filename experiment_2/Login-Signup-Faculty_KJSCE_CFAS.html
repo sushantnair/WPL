@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <link rel = "stylesheet" href = "common.css">
+        <title>Login | KJSCE Course Feedback Analysis System</title>
+    </head>
+    <body>
+        <div class = "container header-styling"> <!--top part of page-->
+            <div class = "header" style = "flex-basis:50%">
+                <img src = "college-symbol.png" id = "logo"/>
+            </div>
+            <div class = "header" style = "flex-basis:35%">
+                <p class = "page-title">KJSCE Course Feedback Analysis System: Faculty Login/Signup Page</p>    
+            </div>
+            <div class = "header" style = "flex-basis:15%">
+                <p><img src = "login_icon.svg" class = "footer-links"></p>
+                <p><a href = "Login-Signup-Student_KJSCE_CFAS.html" target = "_blank">Login/Sign Up (Student)</a></p>
+                <p><img src = "login_icon.svg" class = "footer-links"></p>
+                <p><a href = "Login-Signup-Faculty_KJSCE_CFAS.html" target = "_blank">Login/Sign Up (Faculty)</a></p>
+            </div>
+        </div>
+            <div class = "container bg-img">
+                <pre class = "page-content">
+                    If you have already registered an account, then please login by entering the details below:
+                    <form method = "post">
+                        First Name:
+                        <input type = "text" name = "firstname" value = "First Name">
+                        <br>
+                        Last Name:
+                        <input type = "text" name = "lastname" value = "Last Name">
+                        <br>
+                        E-mail:
+                        <input type = "email" name = "email" value = "Email">
+                        <br>
+                        Password:
+                        <input type = "password" name = "password" value = "Password">
+                        <br>
+                        <input type = "submit" name = "submit" value = "Submit">
+                    </form>
+                    If you have not yet registered an account, then please create a new account:
+                    <form method = "post">
+                        First Name:
+                        <input type = "text" name = "firstname" value = "First Name">
+                        <br>
+                        Last Name:
+                        <input type = "text" name = "lastname" value = "Last Name">
+                        <br>
+                        Date of Birth:
+                        <input type = "date" name = "dob">
+                        <br>
+                        Gender:
+                        <input type = "radio" name = "gender" value = "male">Male
+                        <input type = "radio" name = "gender" value = "female">Female
+                        <br>
+                        Employee Number:
+                        <input type = "number" name = "Employee Number">
+                        <br>   
+                        Course (which you are teaching):
+                        <br>
+                        <input type = "checkbox" name = "AM-I" value = "on">AM-I    <input type = "checkbox" name = "EC" value = "on">EC    <input type = "checkbox" name = "EEEE" value = "on">EEEE    <input type = "checkbox" name = "ED" value = "on">ED    <input type = "checkbox" name = "WS-I" value = "on">WS-I                    
+                        <br>
+                        <input type = "checkbox" name = "AM-II" value = "on">AM-II  <input type = "checkbox" name = "EP" value = "on">EP    <input type = "checkbox" name = "EM" value = "on">EM    <input type = "checkbox" name = "WS-II" value = "on">WS-II
+                        <br>
+                        <input type = "checkbox" name = "ITVC" value = "on">ITVC    <input type = "checkbox" name = "DS" value = "on">DS    <input type = "checkbox" name = "COA" value = "on">COA  <input type = "checkbox" name = "OOPM" value = "on">OOPM    <input type = "checkbox" name = "DSM" value = "on">DSM                 
+                        <br>
+                        <input type = "checkbox" name = "PSOT" value = "on">PSOT    <input type = "checkbox" name = "AOA" value = "on">AOA  <input type = "checkbox" name = "RDBMS" value = "on">RDBMS  <input type = "checkbox" name = "TAC" value = "on">TAC
+                        <br>
+                        <input type = "checkbox" name = "SE" value = "on">SE    <input type = "checkbox" name = "CN" value = "on">CN    <input type = "checkbox" name = "OS" value = "on">OS
+                        <br>
+                        <input type = "checkbox" name = "DSIP" value = "on">DSIP    <input type = "checkbox" name = "IS" value = "on">IS    <input type = "checkbox" name = "AI" value = "on">AI
+                        <br>
+                        Qualification:
+                        Check the major degree you have done:
+                        <br>
+                        <input type = "checkbox" name = "masters" value = "on">Masters
+                        <br>
+                        <input type = "checkbox" name = "Ph.D." value = "on">Ph.D.
+                        <br>
+                        <input type = "checkbox" name = "M.Tech." value = "on">M.Tech.
+                        <br>
+                        <input type = "checkbox" name = "M.Phil." value = "on">M.Phil.
+                        <br>
+                        <input type = "checkbox" name = "PostGrad" value = "on">Post Graduate
+                        <br>
+                        Type the field in which you have earned the degree:
+                        <textarea rows = "5" cols = "50" name = "degreename">Enter the name of the degree(s) here...</textarea>
+                        Experience:
+                        <select name = "dropdown">
+                            <option value = "lessthanfive">less than 5 years</option>
+                            <option value = "fivetoten">5 to 10 years</option>
+                            <option value = "tentofifteen">10 to 15 years</option>
+                            <option value = "fifteentotwenty">15 to 20 years</option>
+                            <option value = "morethantwenty">more than 20 years</option>
+                        </select>
+                        <br>
+                        <input type = "submit" name = "submit" value = "Submit">
+                    </form>
+                </pre>
+            </div>
+            <div class = "container footer-styling"> <!--bottom part of page-->
+                <p align = "center"><img src = "home_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Home_KJSCE_CFAS.html" target = "_blank">Home</a></p> 
+                <p align = "center"><img src = "login_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Login-Signup-Student_KJSCE_CFAS.html" target = "_blank">Login/Sign Up (Student)</a></p>
+                <p align = "center"><img src = "login_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Login-Signup-Faculty_KJSCE_CFAS.html" target = "_blank">Login/Sign Up (Faculty)</a></p>
+                <p align = "center"><img src = "dashboard_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Dashboard_KJSCE_CFAS.html" target = "_blank">Dashboard</a><p></p>
+                <p align = "center" style = "font-family: 'Courier New', Courier, monospace;"><em>© 2023 K.J. Somaiya College of Engineering, Somaiya Vidyavihar University Information Systems. All Rights Reserved.</em></p>
+            </div>
+    </body>
+</html>
