@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <link rel = "stylesheet" href = "bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <link rel = "stylesheet" href = "common.css">
+        <title>DS Feedback | KJSCE Course Feedback Analysis System</title>
+    </head>
+    <body>
+        <div class = "header-styling sticky-top container"> <!--top part of page-->
+            <div class = "header" style = "flex-basis:auto">
+                <img src = "college-symbol.png" id = "logo"/>
+            </div>
+            <div class = "header" style = "flex-basis:80%">
+                <p class = "page-title">KJSCE Course Feedback Analysis System: Home Page</p>    
+            </div>
+            <div class = "header" style = "flex-basis:auto">
+                <nav class = "navbar navbar-expand-md navbar-light">
+                    <div class = "collapse navbar-collapse justify-content-end" id = "my-navbar">
+                        <ul class = "navbar-nav">
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "Login-Signup-Student_KJSCE_CFAS.html" data-toggle = "modal" data-target = "#signup-modal">
+                                    <i class = "fas fa-user"></i>
+                                    Login/Signup (Student)
+                                </a>
+                            </li>
+                            <div class = "nav-vl"></div>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "Login-Signup-Faculty_KJSCE_CFAS.html" data-toggle = "modal" data-target = "#signup-modal">
+                                    <i class = "fas fa-sign-in-alt"></i>
+                                    Login/Signup (Faculty)
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        </div>
+        <div class = "container bg-img">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signup-heading">Course Feedback for DS</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="signup-form" class="form" role="form">
+                            <div class="form-group">
+                                <span>1. After studying the course, do you think you would be able to explain the data structures used in problem solving? (theoretically?)</span><br>
+                                <input type="radio" class="ml-3" name="q1" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q1" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q1" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q1" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>2. After studying the course, do you think you would be able to explain the program that uses data structures for  problem solving? </span><br>
+                                <input type="radio" class="ml-3" name="q2" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q2" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q2" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q2" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>3. After studying the course, do you think you would be able to DESIGN solutions using linear and non-linear data structure  like stack, queue, graph, tree, etc??</span><br>
+                                <input type="radio" class="ml-3" name="q3" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q3" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q3" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q3" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>4. After studying the course, do you think you would be able to IMPLEMENT programming solutions using linear and non-linear data structure  like stack, queue, graph, tree,  etc?</span><br>
+                                <input type="radio" class="ml-3" name="q4" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q4" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q4" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q4" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            
+                            <div class="form-group">
+                                <span>5. After studying the course, do you think you would be able to DESIGN solutions using set, map and dictionary for specified problem definition?</span><br>
+                                <input type="radio" class="ml-3" name="q5" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q5" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q5" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q5" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            
+                            <div class="form-group">
+                                <span>6. After studying the course, do you think you would be able to IMPLEMENT programming solutions by  using set, map and dictionary for specified problem definition?</span><br>
+                                <input type="radio" class="ml-3" name="q6" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q6" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q6" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q6" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            
+                            <div class="form-group">
+                                <span>7. After studying the course, do you think you would be able to demonstrate  your skills in sorting(Hashing, sequential search) and searching(insertion, selection) methods ?</span><br>
+                                <input type="radio" class="ml-3" name="q7" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q7" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q7" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q7" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            
+                            <div class="form-group">
+                                <span>8. After studying the course, do you think you would be able to write programming solutions for   sorting(Hashing, sequential search) and searching(insertion, selection) methods ?</span><br>
+                                <input type="radio" class="ml-3" name="q8" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q8" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q8" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q8" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            
+                        
+                        
+    
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-block btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "container footer-styling"> <!--bottom part of page-->
+            <div class = "footer-options">
+                <div class = "footer-specific-option">
+                    <img src = "home_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Home_KJSCE_CFAS.html" target = "_blank">Home</a>
+                </div>
+                <div class = "footer-specific-option">
+                    <img src = "login_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Login-Signup-Student_KJSCE_CFAS.html" target = "_blank">Login/Sign Up (Student)</a>
+                </div>
+                <div class = "footer-specific-option">
+                    <img src = "login_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Login-Signup-Faculty_KJSCE_CFAS.html" target = "_blank">Login/Sign Up (Faculty)</a>
+                </div>
+                <div class = "footer-specific-option">
+                    <img src = "dashboard_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Student_Dashboard_KJSCE_CFAS.html" target = "_blank">Student Dashboard</a>
+                </div>
+                <div class = "footer-specific-option">
+                    <img src = "dashboard_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Faculty_Dashboard_KJSCE_CFAS.html" target = "_blank">Faculty Dashboard</a>
+                </div>
+            </div>
+            <div class = "footer-copyright">
+                © 2023 K.J. Somaiya College of Engineering, Somaiya Vidyavihar University Information Systems. All Rights Reserved.
+            </div>
+        </div> 
+    </body>
+</html>
