@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <link rel = "stylesheet" href = "bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <link rel = "stylesheet" href = "common.css">
+        <title>AM-II Feedback | KJSCE Course Feedback Analysis System</title>
+    </head>
+    <body>
+        <div class = "header-styling sticky-top container"> <!--top part of page-->
+            <div class = "header" style = "flex-basis:auto">
+                <img src = "college-symbol.png" id = "logo"/>
+            </div>
+            <div class = "header" style = "flex-basis:80%">
+                <p class = "page-title">KJSCE Course Feedback Analysis System: Home Page</p>    
+            </div>
+            <div class = "header" style = "flex-basis:auto">
+                <nav class = "navbar navbar-expand-md navbar-light">
+                    <div class = "collapse navbar-collapse justify-content-end" id = "my-navbar">
+                        <ul class = "navbar-nav">
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "Login-Signup-Student_KJSCE_CFAS.html" data-toggle = "modal" data-target = "#signup-modal">
+                                    <i class = "fas fa-user"></i>
+                                    Login/Signup (Student)
+                                </a>
+                            </li>
+                            <div class = "nav-vl"></div>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "Login-Signup-Faculty_KJSCE_CFAS.html" data-toggle = "modal" data-target = "#signup-modal">
+                                    <i class = "fas fa-sign-in-alt"></i>
+                                    Login/Signup (Faculty)
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        </div>
+        <div class = "container bg-img">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signup-heading">Course Feedback for AM-II</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="signup-form" class="form" role="form">
+                            <div class="form-group">
+                                <span>1. (CO1) The course helped you to understand and solve different
+                                    types of First Order First degree Differential Equations...</span><br>
+                                <input type="radio" class="ml-3" name="q1" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q1" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q1" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q1" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>2. (CO1) The course helped you to solve different types of higher
+                                    order differential equations.</span><br>
+                                <input type="radio" class="ml-3" name="q2" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q2" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q2" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q2" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>3. (CO1) The course helped you to solve problems involving
+                                    applications of differential equations to solve Mechanical and
+                                    Electrical problems.</span><br>
+                                <input type="radio" class="ml-3" name="q3" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q3" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q3" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q3" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>4. (CO2) The course helped you to find nth order derivatives of
+                                    different types of algebraic and trigonometric functions.</span><br>
+                                <input type="radio" class="ml-3" name="q4" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q4" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q4" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q4" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>5. (CO2) The course made you familiar with the concept of Leibnitz
+                                    Theorem to find nth derivative of different types of functions.</span><br>
+                                <input type="radio" class="ml-3" name="q5" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q5" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q5" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q5" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>6. (CO2) The course helped you to apply concept of Taylor's
+                                    theorem and Maclaurin series to find series expansion of functions.</span><br>
+                                <input type="radio" class="ml-3" name="q6" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q6" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q6" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q6" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>7. (CO3) The course made you familiar with the concept of Gamma
+                                    function and helped you to evaluate different types of integrals
+                                    using Gamma function..</span><br>
+                                <input type="radio" class="ml-3" name="q7" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q7" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q7" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q7" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>8. (CO3) The course made you familiar with the concept of Beta
+                                    function and helped you to evaluate different types of integrals
+                                    using Beta function..</span><br>
+                                <input type="radio" class="ml-3" name="q8" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q8" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q8" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q8" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>9. (CO3) The course made you familiar with the concept of DUIS (
+                                    Differentiation under Integral Sign) and helped you to evaluate
+                                    different types of integrals using it.</span><br>
+                                <input type="radio" class="ml-3" name="q9" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q9" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q9" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q9" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>10. (CO4) The course helped you find length of a curve in Polar
+                                    coordinates .</span><br>
+                                <input type="radio" class="ml-3" name="q10" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q10" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q10" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q10" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>11. (CO4) The course helped you find length of a curve in Cartesian
+                                    coordinates .</span><br>
+                                <input type="radio" class="ml-3" name="q11" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q11" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q11" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q11" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>12. (CO4) The course helped you find length of a Parametric curve.</span><br>
+                                <input type="radio" class="ml-3" name="q12" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q12" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q12" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q12" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>13. (CO5) The course helped you to solve problems involving
+                                    Double Integration in Cartesian and Polar coordinates.</span><br>
+                                <input type="radio" class="ml-3" name="q13" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q13" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q13" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q13" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>14. (CO5) The course helped you to solve problems involving Triple
+                                    Integration in Cartesian, Spherical and Cylindrical coordinates..</span><br>
+                                <input type="radio" class="ml-3" name="q14" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q14" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q14" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q14" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            <div class="form-group">
+                                <span>15. (CO5) The course helped you to apply concepts of Double and
+                                    Triple Integration to find Area of a region , Mass of Lamina and
+                                    Volume of solids.</span><br>
+                                <input type="radio" class="ml-3" name="q15" value="stronglyagree" /> 
+                                <label>
+                                    Strongy Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q15" value="agree" />
+                                <label>
+                                    Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q15" value="partiallyagree" />
+                                <label>
+                                    Partially Agree
+                                </label>
+                                <br>
+                                <input type="radio" class="ml-3" name="q15" value="disagree" />
+                                <label>
+                                    Disagree
+                                </label>
+                            </div><br>
+                            
+                        
+                        
+    
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-block btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "container footer-styling"> <!--bottom part of page-->
+            <div class = "footer-options">
+                <div class = "footer-specific-option">
+                    <img src = "home_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Home_KJSCE_CFAS.html" target = "_blank">Home</a>
+                </div>
+                <div class = "footer-specific-option">
+                    <img src = "login_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Login-Signup-Student_KJSCE_CFAS.html" target = "_blank">Login/Sign Up (Student)</a>
+                </div>
+                <div class = "footer-specific-option">
+                    <img src = "login_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Login-Signup-Faculty_KJSCE_CFAS.html" target = "_blank">Login/Sign Up (Faculty)</a>
+                </div>
+                <div class = "footer-specific-option">
+                    <img src = "dashboard_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Student_Dashboard_KJSCE_CFAS.html" target = "_blank">Student Dashboard</a>
+                </div>
+                <div class = "footer-specific-option">
+                    <img src = "dashboard_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Faculty_Dashboard_KJSCE_CFAS.html" target = "_blank">Faculty Dashboard</a>
+                </div>
+            </div>
+            <div class = "footer-copyright">
+                © 2023 K.J. Somaiya College of Engineering, Somaiya Vidyavihar University Information Systems. All Rights Reserved.
+            </div>
+        </div> 
+    </body>
+</html>
