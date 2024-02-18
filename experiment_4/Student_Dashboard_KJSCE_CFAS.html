@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <link rel = "stylesheet" href = "bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <link rel = "stylesheet" href = "common.css">
+        <link rel = "stylesheet" href = "Dashboard.css">
+        <link rel = "stylesheet" href = "Dashboard_Table.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.js">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+        </script>
+        <title>Student Dashboard | KJSCE Course Feedback Analysis System</title>
+    </head>
+    <body>
+        <div class = "header-styling sticky-top row"> <!--top part of page-->
+            <div class = "header col-md">
+                <img src = "college-symbol.png" id = "logo"/>
+            </div>
+            <div class = "header col-md">
+                <p class = "page-title">KJSCE Course Feedback Analysis System</p>
+                <p class = "page-title">Student Dashboard Page</p>    
+            </div>
+            <div class = "header col-md">
+                <nav class = "navbar navbar-expand-md navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar">
+                        <span class="navbar-toggler-icon"></span> 
+                    </button>
+                    <div class = "collapse navbar-collapse justify-content-end" id = "my-navbar">
+                        <ul class = "navbar-nav">
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "Faculty_Dashboard_KJSCE_CFAS.html">
+                                    <button class = "btn btn-primary"><i class = "fas fa-user"></i>&nbsp;&nbsp;Dashboard</button>
+                                </a>
+                            </li>
+                            <div class = "nav-vl"></div>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#">
+                                    <button class = "btn btn-primary"><i class = "fas fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class = "page-container container bg-img">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb" style = "background-color:white">
+                    <li class="breadcrumb-item breadcrumb-item-styling" aria-current = "page"><a href="Home_KJSCE_CFAS.html">Home</a></li>
+                    <li class="breadcrumb-item breadcrumb-item-styling active" aria-current = "page">Student Dashboard</li>
+                </ol>
+            </nav>
+            <div class = "my-profile profile-container">
+                <h1>My Profile</h1>
+                <div class = "row">
+                    <div class = "col-md-3 profile-img-container">
+                        <i class = "fas fa-user profile-img"></i>
+                    </div>
+                    <div class = "col-md-9">
+                        <div class = "row no-gutters justify-content-between align-items-end">
+                            <div class = "profile">
+                                <div class = "name">Rohit Gupta</div>
+                                <div class = "email">rohit.gupta@somaiya.edu</div>
+                                <div class = "eno">160101122112</div>
+                                <div class = "course">AM-I, EC, EEEE, ED, WS-I</div>
+                            </div>  
+                            <div class = "edit">
+                                <div class = "edit-profile">Edit Profile</div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "form-module">
+                <h2 class="form-module-title">Fill New Forms</h2>
+                <div class="row" style="justify-content: space-around;">
+                    <div class="card col-md-auto" style="width: 18rem; margin-bottom:20px">
+                        <img src="background-image.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fill EC Form</h5>
+                            <p class="card-text">Fill the EC form as you study the course and are yet to fill the form</p>
+                            <a href="#" class="btn btn-primary">Fill EC Form</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-auto" style="width: 18rem; margin-bottom:20px">
+                        <img src="background-image.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fill EEEE Form</h5>
+                            <p class="card-text">Fill the EEEE form as you study the course and are yet to fill the form</p>
+                            <a href="#" class="btn btn-primary">Fill EEEE Form</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-auto" style="width: 18rem; margin-bottom:20px">
+                        <img src="background-image.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fill ED Form</h5>
+                            <p class="card-text">Fill the ED form as you study the course and are yet to fill the form</p>
+                            <a href="#" class="btn btn-primary">Fill ED Form</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-auto" style="width: 18rem; margin-bottom:20px">
+                        <img src="background-image.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fill WS-I Form</h5>
+                            <p class="card-text">Fill the WS-I form as you study the course and are yet to fill the form</p>
+                            <a href="#" class="btn btn-primary">Fill WS-I Form</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "form-module">
+                <h2 class="form-module-title">View Filled Forms</h2>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default panel-styling-custom">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <button class = "btn btn-block btn-outline-info">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#am-i-detail" style="color:black;font-size:50px">AM-I</a>
+                                </button>
+                            </h4>
+                        </div>
+                        <div id="am-i-detail" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>View responses to this form up to the time this page was loaded.</p>
+                                <div class = "row">
+                                    <div class = "mx-auto bg-white rounded shadow">
+                                        <div class = "table-responsive">
+                                            <div class = "column">
+                                                <table class = "table table-fixed page-content">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope = "col" class = "col-1">Q. No.</th>
+                                                            <th scope = "col" class = "col-3">Strongly Agree</th>
+                                                            <th scope = "col" class = "col-3">Agree</th>
+                                                            <th scope = "col" class = "col-3">Partially Agree</th>
+                                                            <th scope = "col" class = "col-2">Disagree</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class = "col-1">1</td>
+                                                            <td class = "col-3">1</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-2">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">2</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">1</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-2">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">3</td>
+                                                            <td class = "col-3">1</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-2">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">4</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">1</td>
+                                                            <td class = "col-2">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">5</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">1</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-2">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">6</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">1</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-2">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">7</td>
+                                                            <td class = "col-3">1</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-2">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">8</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">1</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-2">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">9</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">1</td>
+                                                            <td class = "col-2">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">10</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-2">1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">11</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">1</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-2">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">12</td>
+                                                            <td class = "col-3">1</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-2">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">13</td>
+                                                            <td class = "col-3">1</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-2">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">14</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">1</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-2">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">15</td>
+                                                            <td class = "col-3">1</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-2">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">16</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-2">1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">17</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-3">0</td>
+                                                            <td class = "col-2">1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class = "col-1">TOTAL</td>
+                                                            <td class = "col-3">6</td>
+                                                            <td class = "col-3">6</td>
+                                                            <td class = "col-3">2</td>
+                                                            <td class = "col-2">3</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="justify-content: space-around;">
+                                    <div class="card col-md-auto" style="width: 25rem; height: 25rem; margin-bottom:20px; margin-top: 20px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Combined Analysis of All Questions</h5>
+                                            <div style="width:auto;height:auto">
+                                                <canvas id="ami-all-q"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                new Chart($("#ami-all-q"), {
+                    type: 'pie',
+                    options: {
+                        legend: { display: true },
+                        indexAxis: 'x',
+                    },
+                    data: {
+                        labels: ["Strongly Agree", "Agree", "Partially Agree", "Disagree"],
+                        datasets: [
+                            {
+                                label: "AM-I Analysis of Rohit Gupta",
+                                backgroundColor: ["#FFC0CB", "#0000FF",
+                                    "#00FFFF", "#FFA500"],
+                                data: [6,6,2,3]
+                            },
+                            {
+                                label: "Percentage",
+                                backgroundColor: ["#FFC0CB", "#0000FF",
+                                    "#00FFFF", "#FFA500"],
+                                data: [35.29,35.29,11.76,17.64]
+                            }
+                        ]
+                    }            
+                });
+            </script>
+            <p class = "page-content">
+                Hello dear user
+                This page requires the back-end of the website to be functional
+            </p>    
+            <p class = "page-content">
+                If you are logged in, then you will be able to see the courses
+                you are studying, whether or not you have yet filled all the course feedback forms
+                you are supposed to fill, and an analysis of your responses for each course.
+                <a href = "AM-I_Feedback_KJSCE_CFAS.html">Click here</a> to give your feedback
+                about the course Applied Mathematics - I.
+            </p>  
+        </div>  
+        <div class = "container footer-styling" style = "margin-top:0px"> <!--bottom part of page-->
+            <div class = "footer-options">
+                <div class = "footer-specific-option">
+                    <img src = "home_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Home_KJSCE_CFAS.html" target = "_blank">Home</a>
+                </div>
+                <div class = "footer-specific-option">
+                    <img src = "login_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Login-Signup-Student_KJSCE_CFAS.html" target = "_blank">Login/Sign Up (Student)</a>
+                </div>
+                <div class = "footer-specific-option">
+                    <img src = "login_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Login-Signup-Faculty_KJSCE_CFAS.html" target = "_blank">Login/Sign Up (Faculty)</a>
+                </div>
+                <div class = "footer-specific-option">
+                    <img src = "dashboard_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Student_Dashboard_KJSCE_CFAS.html" target = "_blank">Student Dashboard</a>
+                </div>
+                <div class = "footer-specific-option">
+                    <img src = "dashboard_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "Faculty_Dashboard_KJSCE_CFAS.html" target = "_blank">Faculty Dashboard</a>
+                </div>
+            </div>
+            <div class = "footer-copyright">
+                © 2023 K.J. Somaiya College of Engineering, Somaiya Vidyavihar University Information Systems. All Rights Reserved.
+            </div>
+        </div>
+        <script type = "text/javascript" src = "jquery.js"></script>
+        <script type = "text/javascript" src = "bootstrap.min.js"></script>
+    </body>
+</html>
