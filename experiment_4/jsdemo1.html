@@ -1,0 +1,65 @@
+<html>    
+    <body>
+
+    <h1>A Web Page</h1>
+
+    <p id="demo">A Paragraph</p>
+
+    <button type="button" onclick="myFunction1()">Try it</button>
+
+    <button type="button" onclick="myFunction2()">Try it</button>
+
+    <button type="button" onclick="myFunction3()">Try it</button>
+
+    <button type="button" onclick="myFunction4()">Try it</button>
+
+    <script>
+
+            var hour = new Date();
+            var greeting;
+            if (hour.getHours() > 4 && hour.getHours() < 10)
+            {
+                greeting = "Good morning";
+            }
+            else if(hour.getHours() > 10 && hour.getHours() < 16)
+            {
+                greeting = "Good afternoon";
+            }
+            else if(hour.getHours() > 16 && hour.getHours() < 19)
+            {
+                greeting = "Good evening";
+            }
+            else
+            {
+                greeting = "Maybe you should take rest! Good night!";
+            }
+
+    function myFunction1() {
+
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+        
+
+    }
+
+    function myFunction2() {
+
+        document.write(5+6);
+
+    }
+
+    function myFunction3() {
+
+        window.alert(5+6);
+
+    }
+
+    function myFunction4(){
+
+        console.log(5+6);   
+
+    }
+    window.alert(greeting);
+    </script>
+
+    </body>
+</html>
