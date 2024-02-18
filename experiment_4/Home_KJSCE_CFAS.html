@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <title>Home | KJSCE Course Feedback Analysis System</title>
+        <link rel = "stylesheet" href = "bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <link rel = "stylesheet" href = "common.css">
+        <link rel = "stylesheet" href = "Home_KJSCE_CFAS.css">
+        <link rel = "stylesheet" href = "signup-modal.css">
+    </head>
+    <body>   
+        <div class = "header-styling sticky-top row justify-content-center">
+            <div class = "header col-md">
+                <img src = "college-symbol.png" id = "logo"/>
+            </div>
+            <div class = "header col-md">
+                <p class = "page-title">KJSCE Course Feedback Analysis System: Home Page</p>    
+            </div>
+            <div class = "header col-md">
+                <nav class = "navbar navbar-expand-md navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar">
+                        <span class="navbar-toggler-icon"></span> 
+                    </button>
+                    <div class = "collapse navbar-collapse justify-content-end" id = "my-navbar">
+                        <ul class = "navbar-nav">
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#" data-toggle = "modal" data-target = "#login-modal">
+                                    <button class = "btn btn-primary"><i class = "fas fa-user"></i>&nbsp;&nbsp;Login</button>
+                                </a>
+                            </li>
+                            <div class = "nav-vl"></div>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#" data-toggle = "modal" data-target = "#signup-modal">
+                                    <button class = "btn btn-primary"><i class = "fas fa-sign-in-alt"></i>&nbsp;&nbsp;Signup</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class = "page-container container bg-img" style = "padding-bottom:0px"> <!--middle part of page-->
+            <!--<img src = "background-image.jpg" style = "height:auto" class = "bg-img">-->
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+                <ol class="breadcrumb" style = "background-color:white">
+                    <li class="breadcrumb-item active breadcrumb-item-styling" aria-current = "page">Home</li>
+                </ol>
+            </nav>
+            <p class = "page-content">
+            Hello dear site visitor, welcome to the K.J.S.C.E. Course Feedback Analysis System. 
+            In this website, you can create an account as a student or a faculty member, 
+            if you are a student or a faculty member, respectively. Once your account is created,
+            you can go to the dashboard page. </p>
+            <p class = "page-content">
+            If you are a student, then you will be required to submit the CourseFeedback Forms 
+            according to the Semester you are currently studying in. After submission,you will 
+            be given an analysis of the options chosen by you and your overall understanding
+            of that particular course. </p>
+            <p class = "page-content">
+            If you are a faculty member, then you will be given the authority to create the forms
+            according to the subjects that you teach. You will then receive the responses of all the 
+            students who are studying that course and a combined analysis of all responses which will
+            be shown to you as a pie-chart, along with certain numerical calculations which will given
+            you a better idea as to the performance of that course and scope of improvement. </p>
+            <p class = "page-content">
+            Thank you very much for using the website. May you have a good experience and may you
+            derive benefit from it.</p>
+            <div class = "row">
+                <div class = "mx-auto bg-white rounded shadow">
+                    <div class = "table-responsive">
+                        <div class = "column">
+                            <table class = "table table-fixed page-content">
+                                <thead>
+                                    <tr>
+                                        <th scope = "col" class = "col-3">Sr. No.</th>
+                                        <th scope = "col" class = "col-3">Year</th>
+                                        <th scope = "col" class = "col-3">Semester</th>
+                                        <th scope = "col" class = "col-3">Subject</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class = "col-3">1</td>
+                                        <td class = "col-3">FY</td>
+                                        <td class = "col-3">SEM - I</td>
+                                        <td class = "col-3"><a href = "AM-I_Feedback_KJSCE_CFAS.html">AM-I</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">2</td>
+                                        <td class = "col-3">FY</td>
+                                        <td class = "col-3">SEM - I</td>
+                                        <td class = "col-3"><a href = "#">EC</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">3</td>
+                                        <td class = "col-3">FY</td>
+                                        <td class = "col-3">SEM - I</td>
+                                        <td class = "col-3">EEEE</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">4</td>
+                                        <td class = "col-3">FY</td>
+                                        <td class = "col-3">SEM - I</td>
+                                        <td class = "col-3">ED</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">5</td>
+                                        <td class = "col-3">FY</td>
+                                        <td class = "col-3">SEM - I</td>
+                                        <td class = "col-3">WS-I</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">1</td>
+                                        <td class = "col-3">FY</td>
+                                        <td class = "col-3">SEM-II</td>
+                                        <td class = "col-3">AM-II</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">2</td>
+                                        <td class = "col-3">FY</td>
+                                        <td class = "col-3">SEM-II</td>
+                                        <td class = "col-3">EP</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">3</td>
+                                        <td class = "col-3">FY</td>
+                                        <td class = "col-3">SEM-II</td>
+                                        <td class = "col-3">EM</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">4</td>
+                                        <td class = "col-3">FY</td>
+                                        <td class = "col-3">SEM-II</td>
+                                        <td class = "col-3">WS-II</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">1</td>
+                                        <td class = "col-3">SY</td>
+                                        <td class = "col-3">SEM-III</td>
+                                        <td class = "col-3">ITVC</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">2</td>
+                                        <td class = "col-3">SY</td>
+                                        <td class = "col-3">SEM-III</td>
+                                        <td class = "col-3">ITVC Lab</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">3</td>
+                                        <td class = "col-3">SY</td>
+                                        <td class = "col-3">SEM-III</td>
+                                        <td class = "col-3">DS</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">4</td>
+                                        <td class = "col-3">SY</td>
+                                        <td class = "col-3">SEM-III</td>
+                                        <td class = "col-3">COA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">5</td>
+                                        <td class = "col-3">SY</td>
+                                        <td class = "col-3">SEM-III</td>
+                                        <td class = "col-3">OOPM</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">6</td>
+                                        <td class = "col-3">SY</td>
+                                        <td class = "col-3">SEM-III</td>
+                                        <td class = "col-3">DSM</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">1</td>
+                                        <td class = "col-3">SY</td>
+                                        <td class = "col-3">SEM-IV</td>
+                                        <td class = "col-3">PSOT</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">2</td>
+                                        <td class = "col-3">SY</td>
+                                        <td class = "col-3">SEM-IV</td>
+                                        <td class = "col-3">PSOT Lab</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">3</td>
+                                        <td class = "col-3">SY</td>
+                                        <td class = "col-3">SEM-IV</td>
+                                        <td class = "col-3">AOA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">4</td>
+                                        <td class = "col-3">SY</td>
+                                        <td class = "col-3">SEM-IV</td>
+                                        <td class = "col-3">RDBMS</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">5</td>
+                                        <td class = "col-3">SY</td>
+                                        <td class = "col-3">SEM-IV</td>
+                                        <td class = "col-3">TAC</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">1</td>
+                                        <td class = "col-3">TY</td>
+                                        <td class = "col-3">SEM-V</td>
+                                        <td class = "col-3">SE</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">2</td>
+                                        <td class = "col-3">TY</td>
+                                        <td class = "col-3">SEM-V</td>
+                                        <td class = "col-3">SE Lab</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">3</td>
+                                        <td class = "col-3">TY</td>
+                                        <td class = "col-3">SEM-V</td>
+                                        <td class = "col-3">CN</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">4</td>
+                                        <td class = "col-3">TY</td>
+                                        <td class = "col-3">SEM-V</td>
+                                        <td class = "col-3">CN Lab</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">5</td>
+                                        <td class = "col-3">TY</td>
+                                        <td class = "col-3">SEM-V</td>
+                                        <td class = "col-3">OS</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">6</td>
+                                        <td class = "col-3">TY</td>
+                                        <td class = "col-3">SEM-V</td>
+                                        <td class = "col-3">OS Lab</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">1</td>
+                                        <td class = "col-3">TY</td>
+                                        <td class = "col-3">SEM-VI</td>
+                                        <td class = "col-3">DSIP</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">2</td>
+                                        <td class = "col-3">TY</td>
+                                        <td class = "col-3">SEM-VI</td>
+                                        <td class = "col-3">DSIP Lab</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">3</td>
+                                        <td class = "col-3">TY</td>
+                                        <td class = "col-3">SEM-VI</td>
+                                        <td class = "col-3">IS</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">4</td>
+                                        <td class = "col-3">TY</td>
+                                        <td class = "col-3">SEM-VI</td>
+                                        <td class = "col-3">IS Lab</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">5</td>
+                                        <td class = "col-3">TY</td>
+                                        <td class = "col-3">SEM-VI</td>
+                                        <td class = "col-3">AI</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "col-3">6</td>
+                                        <td class = "col-3">TY</td>
+                                        <td class = "col-3">SEM-VI</td>
+                                        <td class = "col-3">AI Lab</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "container footer-styling"> <!--bottom part of page-->
+            <div class = "footer-options">
+                <div class = "footer-specific-option">
+                    <button class = "btn btn-primary">
+                        <img src = "home_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "#" target = "_blank"><span style = "color:black">Home</span></a>
+                    </button>
+                </div>
+                <div class = "footer-specific-option">
+                    <button class = "btn btn-primary">
+                        <img src = "dashboard_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "#" target = "_blank"><span style = "color:black">Dashboard</span></a>
+                    </button>
+                </div>
+                <div class = "footer-specific-option">
+                    <button class = "btn btn-primary">
+                        <img src = "dashboard_icon.svg" class = "footer-links">&nbsp;&nbsp;&nbsp;&nbsp;<a href = "#" target = "_blank"><span style = "color:black">Logout</span></a>
+                    </button>
+                </div>
+            </div>
+            <div class = "footer-copyright">
+                © 2023 K.J. Somaiya College of Engineering, Somaiya Vidyavihar University Information Systems. All Rights Reserved.
+            </div>
+        </div> 
+        <div class = "modal fade" id = "login-modal" tabindex = "-1" role = "dialog">
+            <div class="modal-dialog" role="document">  
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signup-heading">Login with KJSCE CFAS</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <nav class = "navbar navbar-expand-md navbar-light">
+                            <div class = "collapse navbar-collapse justify-content-center" id = "my-navbar">
+                                <ul class = "navbar-nav">
+                                    <li class = "nav-item">
+                                        <a class = "nav-link" href = "#" data-toggle = "modal" data-target = "#student-login-modal">
+                                            <button class = "btn btn-primary"><i class = "fas fa-user"></i>&nbsp;&nbsp;Login as Student</button>
+                                        </a>
+                                    </li>
+                                    <div class = "nav-vl"></div>
+                                    <li class = "nav-item">
+                                        <a class = "nav-link" href = "#" data-toggle = "modal" data-target = "#faculty-login-modal">
+                                            <button class = "btn btn-primary"><i class = "fas fa-sign-in-alt"></i>&nbsp;&nbsp;Login as Faculty</button>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class = "modal-footer">
+                        <span>Account not yet created?<span>
+                        <span><a href = "#" data-dismiss = "modal" data-toggle = "modal" data-target = "#student-signup-modal">Signup as Student</a></span>
+                        <span><a href = "#" data-dismiss = "modal" data-toggle = "modal" data-target = "#faculty-signup-modal">Signup as Faculty</a></span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class = "modal fade" id = "student-login-modal" tabindex = "-1" role = "dialog">
+            <div class="modal-dialog" role="document">  
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signup-heading">Login as Student</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="student-login-form" class="form" role="form" action="Student_Dashboard_KJSCE_CFAS.html">
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </div>
+                                <input type="password" class="form-control" name="password" placeholder="Password" minlength="6" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-block btn-primary">Login as Student</button>
+                            
+                            </div>
+                        </form>
+                    </div>
+                    <div class = "modal-footer">
+                        <span>Account not yet created?<span>
+                        <span><a href = "#" data-dismiss = "modal" data-toggle = "modal" data-target = "#signup-modal">Signup as Student</a></span>
+                        <span><a href = "#" data-dismiss = "modal" data-toggle = "modal" data-target = "#signup-modal">Signup as Faculty</a></span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class = "modal fade" id = "faculty-login-modal" tabindex = "-1" role = "dialog">
+            <div class="modal-dialog" role="document">  
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signup-heading" >Login as Faculty</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="faculty-login-form" class="form" role="form" action="Faculty_Dashboard_KJSCE_CFAS.html">
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </div>
+                                <input type="password" class="form-control" name="password" placeholder="Password" minlength="6" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-block btn-primary">Login as Faculty</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class = "modal-footer">
+                        <span>Account not yet created?<span>
+                        <span><a href = "#" data-dismiss = "modal" data-toggle = "modal" data-target = "#signup-modal">Signup as Student</a></span>
+                        <span><a href = "#" data-dismiss = "modal" data-toggle = "modal" data-target = "#signup-modal">Signup as Faculty</a></span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class = "modal fade" id = "signup-modal" tabindex = "-1" role = "dialog">
+            <div class="modal-dialog" role="document">  
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signup-heading">Signup with KJSCE CFAS</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <nav class = "navbar navbar-expand-md navbar-light">
+                            <div class = "collapse navbar-collapse justify-content-center" id = "my-navbar">
+                                <ul class = "navbar-nav">
+                                    <li class = "nav-item">
+                                        <a class = "nav-link" href = "#" data-toggle = "modal" data-target = "#student-signup-modal">
+                                            <button class = "btn btn-primary"><i class = "fas fa-user"></i>&nbsp;&nbsp;Signup as Student</button>
+                                        </a>
+                                    </li>
+                                    <div class = "nav-vl"></div>
+                                    <li class = "nav-item">
+                                        <a class = "nav-link" href = "#" data-toggle = "modal" data-target = "#faculty-signup-modal">
+                                            <button class = "btn btn-primary"><i class = "fas fa-sign-in-alt"></i>&nbsp;&nbsp;Signup as Faculty</button>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav> 
+                    </div>
+                    <div class = "modal-footer">
+                        <span>Account already created?<span>
+                        <span><a href = "#" data-dismiss = "modal" data-toggle = "modal" data-target = "#student-login-modal">Login as Student</a></span>
+                        <span><a href = "#" data-dismiss = "modal" data-toggle = "modal" data-target = "#faculty-login-modal">Login as Faculty</a></span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class = "modal fade" id = "student-signup-modal" tabindex = "-1" role = "dialog">
+            <div class="modal-dialog" role="document">  
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signup-heading">Signup as Student</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="student-signup-form" class="form" role="form">
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
+                            </div>
+                            <span>Date of Birth:</span><br>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class='fas fa-calendar-alt'></i>
+                                    </span>
+                                </div>
+                                <input type="date" class="form-control" name="dob" placeholder="Date of Birth" required>
+                            </div>
+                            <div class="form-group">
+                                <span>Gender: </span>
+                                <input type="radio" class="ml-3" id="gender-male" name="gender" value="male" /> Male
+                                <label for="gender-male">
+                                </label>
+                                <input type="radio" class="ml-3" id="gender-female" name="gender" value="female" />
+                                <label for="gender-female">
+                                    Female
+                                </label>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-hashtag"></i>
+                                    </span>
+                                </div>
+                                <input type="number" class="form-control" name="Roll_No" placeholder="Roll Number" maxlength="11" minlength="11" required>
+                            </div>    
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <input type="email" id = "student_email" name = "student_email" class="form-control" name="email" placeholder="Email" required>
+                            </div>
+                            <div id = "student-email-error-message">
+                                <h6 id = "s_email" class = "invalid">Email must belong to somaiya.edu domain.</h6>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </div>
+                                <input type="password" id = "spword" name = "spword" pattern = "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8, }" title = "Password must contain at least one digit, one uppercase and one lowercase letter, as well as a total of 8 or more characters in total." class="form-control" name="password" placeholder="Password" minlength="8" required>
+                            </div>
+                            <div id="student-password-error-message">
+                                <h3>Password must contain the following:</h3>
+                                <p id="s_lowercase" class="invalid">A <b>lowercase</b> letter</p>
+                                <p id="s_uppercase" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                                <p id="s_digit" class="invalid">A <b>number</b></p>
+                                <p id="s_length" class="invalid">Minimum <b>8 characters</b></p>
+                            </div>
+                            <div class="form-group">
+                                <span>Year:</span>
+                                <select name = "year" class = "btn btn-block btn-info">
+                                    <option value = "fy">FY</option>
+                                    <option value = "sy">SY</option>
+                                    <option value = "ty">TY</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <span>Semester:</span>
+                                <select name = "semester" class = "btn btn-block btn-info">
+                                    <option value = "sem-i">SEM-I</option>
+                                    <option value = "sem-ii">SEM-II</option>
+                                    <option value = "sem-iii">SEM-III</option>
+                                    <option value = "sem-iv">SEM-IV</option>
+                                    <option value = "sem-v">SEM-V</option>
+                                    <option value = "sem-vi">SEM-VI</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-block btn-primary">Create Account for Student</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class = "modal-footer">
+                        <span>Account already created?<span>
+                        <span><a href = "#" data-dismiss = "modal" data-toggle = "modal" data-target = "#student-login-modal">Login as Student</a></span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class = "modal fade" id = "faculty-signup-modal" tabindex = "-1" role = "dialog">
+            <div class="modal-dialog" role="document">  
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signup-heading">Signup as Faculty</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="faculty-signup-form" class="form" role="form">
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
+                            </div>
+                            <span>Date of Birth:</span><br>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class='fas fa-calendar-alt'></i>
+                                    </span>
+                                </div>
+                                <input type="date" class="form-control" name="dob" placeholder="Date of Birth" required>
+                            </div>
+                            <div class="form-group">
+                                <span>Gender: </span>
+                                <input type="radio" class="ml-3" id="gender-male" name="gender" value="male" /> Male
+                                <label for="gender-male">
+                                </label>
+                                <input type="radio" class="ml-3" id="gender-female" name="gender" value="female" />
+                                <label for="gender-female">
+                                    Female
+                                </label>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-hashtag"></i>
+                                    </span>
+                                </div>
+                                <input type="number" class="form-control" name="employee_no" placeholder="Employee Number" maxlength="10" minlength="10" required>
+                            </div>    
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <input type="email" id = "faculty_email" name = "faculty_email" class="form-control" name="email" placeholder="Email" required>
+                            </div>
+                            <div id = "faculty-email-error-message">
+                                <h6 id = "f_email" class = "invalid">Email must belong to somaiya.edu domain.</h6>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </div>
+                                <input type="password" id = "facultypword" name = "facultypword" pattern = "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8, }" title = "Password must contain at least one digit, one uppercase and one lowercase letter, as well as a total of 8 or more characters in total." class="form-control" name="password" placeholder="Password" minlength="8" required>
+                            </div>
+                            <div id="faculty-password-error-message">
+                                <h4>Password must contain the following:</h4>
+                                <p id="f_lowercase" class="invalid">A <b>lowercase</b> letter</p>
+                                <p id="f_uppercase" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                                <p id="f_digit" class="invalid">A <b>number</b></p>
+                                <p id="f_length" class="invalid">Minimum <b>8 characters</b></p>
+                            </div>
+                            <div class="form-group">
+                                <span>Course you are teaching:</span><br>
+                                <span>FY SEM-I:&nbsp;&nbsp; </span>
+                                <input type = "checkbox" class = "ml-3" id = "AM-I" name = "AM-I" value = "AM-I">
+                                <label for="AM-I">
+                                    AM-I
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "EC" name = "EC" value = "EC">
+                                <label for="EC">
+                                    EC
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "EEEE" name = "EEEE" value = "EEEE">
+                                <label for="EEEE">
+                                    EEEE
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "ED" name = "ED" value = "ED">
+                                <label for="ED">
+                                    ED
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "WS-I" name = "WS-I" value = "WS-I">
+                                <label for="WS-I">
+                                    WS-I
+                                </label>
+                                <br>
+                                <span>FY SEM-II:&nbsp;&nbsp; </span>
+                                <input type = "checkbox" class = "ml-3" id = "AM-II" name = "AM-II" value = "AM-II">
+                                <label for="AM-II">
+                                    AM-II
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "EP" name = "EP" value = "EP">
+                                <label for="EP">
+                                    EP
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "EM" name = "EM" value = "EM">
+                                <label for="EM">
+                                    EM
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "WS-II" name = "WS-II" value = "WS-II">
+                                <label for="WS-II">
+                                    WS-II
+                                </label>
+                                <br>
+                                <span>SY SEM-III:&nbsp;&nbsp; </span>
+                                <input type = "checkbox" class = "ml-3" id = "ITVC" name = "ITVC" value = "ITVC">
+                                <label for="ITVC">
+                                    ITVC
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "DS" name = "DS" value = "DS">
+                                <label for="DS">
+                                    DS
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "COA" name = "COA" value = "COA">
+                                <label for="COA">
+                                    COA
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "OOPM" name = "OOPM" value = "OOPM">
+                                <label for="OOPM">
+                                    OOPM
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "DSM" name = "DSM" value = "DSM">
+                                <label for="DSM">
+                                    DSM
+                                </label>
+                                <br>
+                                <span>SY SEM-IV:&nbsp;&nbsp; </span>
+                                <input type = "checkbox" class = "ml-3" id = "PSOT" name = "PSOT" value = "PSOT">
+                                <label for="PSOT">
+                                    PSOT
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "AOA" name = "AOA" value = "AOA">
+                                <label for="AOA">
+                                    AOA
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "RDBMS" name = "RDBMS" value = "RDBMS">
+                                <label for="RDBMS">
+                                    RDBMS
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "TAC" name = "TAC" value = "TAC">
+                                <label for="TAC">
+                                    TAC
+                                </label>
+                                <br>
+                                <span>TY SEM-V:&nbsp;&nbsp; </span>
+                                <input type = "checkbox" class = "ml-3" id = "SE" name = "SE" value = "SE">
+                                <label for="SE">
+                                    SE
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "CN" name = "CN" value = "CN">
+                                <label for="CN">
+                                    CN
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "OS" name = "OS" value = "OS">
+                                <label for="OS">
+                                    OS
+                                </label>
+                                <br>
+                                <span>TY SEM-VI:&nbsp;&nbsp; </span>
+                                <input type = "checkbox" class = "ml-3" id = "DSIP" name = "DSIP" value = "DSIP">
+                                <label for="DSIP">
+                                    DSIP
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "IS" name = "IS" value = "IS">
+                                <label for="IS">
+                                    IS
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "AI" name = "AI" value = "AI">
+                                <label for="AI">
+                                    AI
+                                </label>
+                            </div>
+                            <div class = "form-group">
+                                <span>Your Qualification:</span><br>
+                                <input type = "checkbox" class = "ml-3" id = "Masters" name = "Masters" value = "Masters">
+                                <label for="Masters">
+                                    Masters
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "M.Tech." name = "M.Tech." value = "M.Tech.">
+                                <label for="M.Tech.">
+                                    M.Tech.
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "Ph.D." name = "Ph.D." value = "Ph.D.">
+                                <label for="Ph.D.">
+                                    Ph.D.
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "M.Phil." name = "M.Phil." value = "M.Phil.">
+                                <label for="M.Phil.">
+                                    M.Phil.
+                                </label>
+                                <input type = "checkbox" class = "ml-3" id = "Postdoc" name = "Postdoc" value = "Postdoc">
+                                <label for="Postdoc">
+                                    Postdoc
+                                </label>
+                            </div>
+                            <div class = "form-group">
+                                <span>Type the field in which you have earned the degree:</span>
+                                <textarea class = "btn btn-outline-info" rows = "5" cols = "50" name = "degreename" placeholder = "Enter the name of the degree(s) here..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <span>Your Teaching Experience:</span>
+                                <select name = "dropdown"class = "btn btn-block btn-info">
+                                    <option value = "lessthanfive">less than 5 years</option>
+                                    <option value = "fivetoten">5 to 10 years</option>
+                                    <option value = "tentofifteen">10 to 15 years</option>
+                                    <option value = "fifteentotwenty">15 to 20 years</option>
+                                    <option value = "morethantwenty">more than 20 years</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-block btn-primary">Create Account for Faculty</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class = "modal-footer">
+                        <span>Account already created?<span>
+                        <span><a href = "#" data-dismiss = "modal" data-toggle = "modal" data-target = "#faculty-login-modal">Login as Faculty</a></span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <script type = "text/javascript" src = "jquery.js"></script>
+        <script type = "text/javascript" src = "bootstrap.min.js"></script>
+        <script type = "text/javascript" src = "signup-modal.js"></script>
+    </body>
+</html>
